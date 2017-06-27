@@ -28,4 +28,4 @@ del /Q /F C:\Windows\Panther\unattend.xml
 If you wish to disable the warning pop-up alerts that run on every boot up of the server (i.e. “Are you sure to run this script?”), please follow the steps below:
 1. Go to `Control Panel -> User -> Change User Account Control settings`
 2. Move the scroll bar to the bottom position labelled `Never notify me`
-<img src="https://farm5.staticflickr.com/4262/35176689370_41428049f3_o.png">
+<img src="https://farm5.staticflickr.com/4283/35524727206_a6827970e5_o.png">
