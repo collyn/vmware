@@ -6,7 +6,9 @@
 # The script will first resize the partition by changing the partition end sector of the selected partition, and then after a reboot resize the filesystem.
 # By default it rescans the SCSI bus to check a change in disk size if the disk was hot-extended, which is easy with VMs, and only then proceeds.
 # If the extended disk size is recognized by the OS already, you can force resizing with the -f flag.
-#########
+#
+# Github: https://github.com/alpacacode/Homebrewn-Scripts
+########
 
 usage() {
   echo "Usage:
@@ -88,7 +90,7 @@ resizefs_systemd() {
   # Resize the filesystem using a script called by a temporary systemd service file if the OS runs with systemd.
   echo "#Cleanup systemd autostart script again.
 systemctl disable fsresize.service
-rm -f /etc/systemd/system/fsresize.service" >> /root/fsresize.sh
+rm -f /etc/systemd/system/fsresize.service /root/fsresize.sh" >> /root/fsresize.sh
 
   echo "[Unit]
 Description=Filesystem resize script for LVM volume $l
